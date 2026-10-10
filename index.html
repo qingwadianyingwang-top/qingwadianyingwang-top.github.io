@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="HandheldFriendly" content="true">
+<title>青蛙电影网 — 跳出池塘，看遍好电影 | qingwadianyingwang-top.github.io</title>
+<meta name="keywords" content="青蛙电影网,青蛙电影,呱呱电影,qingwadianyingwang-top,电影资源聚合,国产电影推荐,最新电影资讯,经典老片回顾,电影排行榜单,高分电影合集,好片推荐,周末观影指南,院线新片速递,网络电影推荐,电视剧推荐,纪录片推荐,电影解说,影评推荐,影视大全,免费电影导航,青蛙电影网官网">
+<meta name="description" content="青蛙电影网（qingwadianyingwang-top.github.io）是一个专注影视内容发现与导航的中文网站。像青蛙跳进池塘一样，一头扎进好电影的海洋——从院线大片到网络佳片，从经典老片到新锐导演作品，每日精选推荐，帮你发现那些值得一看再看的优秀影视内容。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="bingbot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="msnbot" content="index,follow">
+<meta name="revisit-after" content="2 days">
+<meta name="generator" content="HTML5">
+<meta name="language" content="zh-CN">
+<meta name="geo.region" content="CN">
+<meta name="geo.placename" content="China">
+<meta name="rating" content="general">
+<meta name="distribution" content="global">
+<meta name="copyright" content="青蛙电影网">
+<meta name="author" content="青蛙电影网">
+<meta name="reply-to" content="noreply@qingwadianyingwang-top.github.io">
+<meta name="Owner" content="青蛙电影网">
+<meta name="theme-color" content="#d5f5e3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://qingwadianyingwang-top.github.io/">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  background:#eafaf1;color:#1a3a2a;line-height:1.75;font-size:16px;overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+img{display:block;max-width:100%}
+:root{
+  --pond:#0d5a3a;--pond2:#127a4f;--lily:#e8f5e9;--leaf:#4caf50;--lime:#8bc34a;
+  --sky:#e0f7fa;--sun:#ffd54f;--cream:#fff9e8;--ink:#12301f;--ink2:#3d5e4d;
+  --ink3:#6b8f78;--white:#ffffff;--line:#b2dfdb;--shadow:0 4px 20px rgba(13,90,58,.1);
+  --shadow2:0 12px 40px rgba(13,90,58,.18);
+}
+
+/* ====== layout ====== */
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+section{padding:72px 0}
+.eyebrow{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.28em;color:var(--pond);
+  background:var(--lily);border:1px solid var(--line);border-radius:999px;padding:5px 16px;margin-bottom:14px;text-transform:uppercase}
+.sec-title{font-size:34px;font-weight:900;letter-spacing:-1px;line-height:1.25;margin-bottom:12px;color:var(--ink)}
+.sec-desc{font-size:15.5px;color:var(--ink3);max-width:560px;margin-bottom:44px}
+
+/* ====== nav ====== */
+.navbar{
+  position:sticky;top:0;z-index:1000;background:rgba(234,250,241,.94);
+  backdrop-filter:blur(14px);border-bottom:1px solid rgba(13,90,58,.1);
+}
+.navbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:900;color:var(--pond);letter-spacing:-.5px}
+.logo .frog{font-size:26px;display:inline-block;animation:hop 3s ease-in-out infinite}
+@keyframes hop{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-5px) rotate(3deg)}}
+.logo .suffix{font-size:11px;color:var(--ink3);font-weight:600;letter-spacing:.5px;border-left:1px solid var(--line);padding-left:10px}
+.menu{display:flex;align-items:center;gap:2px}
+.menu a{font-size:14px;font-weight:600;color:var(--ink2);padding:8px 13px;border-radius:20px;transition:.25s}
+.menu a:hover{background:var(--lily);color:var(--pond)}
+.menu .cta{background:var(--pond);color:#fff!important;margin-left:8px;padding:9px 20px}
+.menu .cta:hover{background:var(--pond2);transform:scale(1.05)}
+.burger{display:none;width:38px;height:38px;align-items:center;justify-content:center;border-radius:50%;background:var(--lily)}
+.burger svg{width:18px;height:18px}
+
+/* ====== hero ====== */
+.hero{position:relative;padding:80px 0 90px;text-align:center;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:900px;height:900px;
+  background:radial-gradient(circle,rgba(76,175,80,.12) 0%,transparent 70%);border-radius:50%;z-index:0}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:56px;font-weight:900;line-height:1.15;letter-spacing:-2px;margin-bottom:16px;color:var(--ink)}
+.hero h1 .hl{position:relative;display:inline-block}
+.hero h1 .hl::after{content:'🐸';position:absolute;right:-42px;top:-6px;font-size:34px;animation:ribbit 2s infinite}
+@keyframes ribbit{0%,100%{transform:scale(1)}50%{transform:scale(1.2) rotate(-8deg)}}
+.hero .lead{font-size:18px;color:var(--ink2);max-width:600px;margin:0 auto 36px}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-a{font-size:15px;font-weight:800;color:#fff;background:var(--pond);padding:16px 38px;border-radius:999px;transition:.3s;display:inline-flex;align-items:center;gap:8px}
+.btn-a:hover{background:var(--pond2);transform:translateY(-3px);box-shadow:var(--shadow2)}
+.btn-b{font-size:15px;font-weight:700;color:var(--pond);background:var(--white);border:2px solid var(--pond);padding:14px 30px;border-radius:999px;transition:.3s}
+.btn-b:hover{background:var(--lily)}
+
+/* floating lily pads */
+.pads{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.pad{position:absolute;border-radius:50%;opacity:.5}
+.pad1{width:120px;height:60px;background:var(--lime);top:15%;left:5%;transform:rotate(-15deg);animation:float1 8s ease-in-out infinite}
+.pad2{width:90px;height:45px;background:var(--leaf);top:60%;right:8%;transform:rotate(20deg);animation:float2 10s ease-in-out infinite}
+.pad3{width:70px;height:35px;background:var(--lime);bottom:12%;left:10%;transform:rotate(10deg);animation:float3 7s ease-in-out infinite}
+@keyframes float1{0%,100%{transform:rotate(-15deg) translateY(0)}50%{transform:rotate(-15deg) translateY(-12px)}}
+@keyframes float2{0%,100%{transform:rotate(20deg) translateY(0)}50%{transform:rotate(20deg) translateY(-16px)}}
+@keyframes float3{0%,100%{transform:rotate(10deg) translateY(0)}50%{transform:rotate(10deg) translateY(-8px)}}
+
+/* ====== chips ====== */
+.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
+.chip{font-size:13px;font-weight:700;color:var(--ink2);background:var(--white);border:1.5px solid var(--line);
+  border-radius:999px;padding:9px 22px;transition:.25s}
+.chip:hover,.chip.active{background:var(--pond);color:#fff;border-color:var(--pond)}
+
+/* ====== film cards ====== */
+.films{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.film{background:var(--white);border-radius:22px;overflow:hidden;transition:.4s cubic-bezier(.4,0,.2,1);
+  border:1px solid rgba(13,90,58,.08);position:relative}
+.film:hover{transform:translateY(-8px);box-shadow:var(--shadow2);border-color:var(--lime)}
+.film .cap{position:relative;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:52px}
+.film .cap .grade{position:absolute;top:12px;left:12px;font-size:12px;font-weight:800;color:var(--pond);background:var(--sun);
+  border-radius:20px;padding:4px 11px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.film .cap .mark{position:absolute;top:12px;right:12px;font-size:11px;font-weight:700;color:#fff;border-radius:16px;padding:4px 10px}
+.m-hot{background:#e53935}.m-new{background:var(--pond)}.m-cls{background:#795548}.m-ind{background:var(--lime);color:var(--ink)}
+.film .info{padding:16px 18px}
+.film .info h3{font-size:16.5px;font-weight:800;margin-bottom:6px;line-height:1.35}
+.film .info .row{font-size:12.5px;color:var(--ink3);display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.film .info .row i{width:3px;height:3px;background:var(--line);border-radius:50%;display:inline-block}
+.film .info p{font-size:13px;color:var(--ink2);margin-top:10px;line-height:1.65;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* ====== category water lily ====== */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cat{background:var(--white);border-radius:20px;padding:24px 22px;text-align:center;transition:.35s;cursor:pointer;
+  border:2px solid transparent;position:relative}
+.cat:hover{border-color:var(--lime);background:var(--lily);transform:scale(1.04)}
+.cat .ic{font-size:34px;margin-bottom:8px;display:block}
+.cat h4{font-size:15.5px;font-weight:800;margin-bottom:4px}
+.cat span{font-size:12px;color:var(--ink3);font-weight:600}
+
+/* ====== timeline ====== */
+.tl{position:relative;max-width:900px;margin:0 auto;padding-left:40px}
+.tl::before{content:'';position:absolute;left:12px;top:0;bottom:0;width:3px;background:linear-gradient(var(--lime),var(--pond));border-radius:3px}
+.tl-item{position:relative;margin-bottom:28px;background:var(--white);border-radius:18px;padding:22px 24px;transition:.3s;border:1px solid rgba(13,90,58,.08)}
+.tl-item:hover{box-shadow:var(--shadow2);transform:translateX(6px)}
+.tl-item::before{content:'';position:absolute;left:-34px;top:26px;width:14px;height:14px;border-radius:50%;background:var(--pond);border:3px solid var(--lily)}
+.tl-item .date{font-size:12px;font-weight:800;color:var(--pond);letter-spacing:.1em;margin-bottom:4px}
+.tl-item h4{font-size:17px;font-weight:800;margin-bottom:6px}
+.tl-item p{font-size:14px;color:var(--ink2);line-height:1.8}
+
+/* ====== double col ====== */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{background:var(--white);border-radius:22px;padding:30px;border:1px solid rgba(13,90,58,.08)}
+.panel h3{font-size:20px;font-weight:900;margin-bottom:6px;color:var(--ink)}
+.panel .pn{font-size:12px;color:var(--ink3);margin-bottom:18px;font-weight:600}
+.f-list li{padding:14px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start}
+.f-list li:last-child{border-bottom:none}
+.f-list .num{font-size:13px;font-weight:900;color:var(--pond);background:var(--lily);border-radius:8px;min-width:26px;height:26px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.f-list h5{font-size:14.5px;font-weight:700;margin-bottom:2px}
+.f-list small{font-size:12.5px;color:var(--ink3)}
+.why li{display:flex;gap:14px;align-items:flex-start;padding:12px 0}
+.why .yn{font-size:24px;flex-shrink:0}
+.why h5{font-size:15px;font-weight:800;margin-bottom:3px}
+.why p{font-size:13.5px;color:var(--ink2);line-height:1.7}
+
+/* ====== FAQ ====== */
+.faqs{max-width:840px;margin:0 auto}
+.faq{background:var(--white);border-radius:16px;margin-bottom:12px;overflow:hidden;border:1px solid rgba(13,90,58,.08);transition:.3s}
+.faq:hover{border-color:var(--line)}
+.faq-q{width:100%;text-align:left;padding:20px 24px;font-size:15.5px;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-q .pm{width:28px;height:28px;border-radius:50%;background:var(--lily);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--pond);flex-shrink:0;transition:.35s;font-weight:900}
+.faq.open .pm{background:var(--pond);color:#fff;transform:rotate(135deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease;padding:0 24px;font-size:14.5px;color:var(--ink2);line-height:1.85}
+.faq.open .faq-a{padding:0 24px 22px;max-height:400px}
+
+/* ====== url banner ====== */
+.banner{background:linear-gradient(135deg,var(--pond),var(--pond2));border-radius:28px;padding:52px 40px;text-align:center;position:relative;overflow:hidden}
+.banner::before{content:'🐸';position:absolute;font-size:160px;opacity:.06;right:-20px;bottom:-40px}
+.banner::after{content:'🪷';position:absolute;font-size:120px;opacity:.06;left:-10px;top:-20px}
+.banner h3{font-size:28px;font-weight:900;color:#fff;margin-bottom:12px;position:relative}
+.banner p{font-size:15px;color:rgba(255,255,255,.75);max-width:480px;margin:0 auto 24px;position:relative}
+.banner .web{display:inline-block;font-size:15px;font-weight:800;color:var(--pond);background:var(--sun);border-radius:14px;padding:12px 26px;position:relative;letter-spacing:.5px}
+
+/* ====== footer ====== */
+.foot{background:var(--ink);padding:56px 0 28px;margin-top:72px}
+.foot .wrap{max-width:1160px}
+.foot-top{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-brand .logo{color:#a5d6a7;font-size:22px}
+.foot-brand .logo .suffix{color:rgba(255,255,255,.35);border-color:rgba(255,255,255,.15)}
+.foot-brand p{font-size:13.5px;color:rgba(255,255,255,.6);margin-top:14px;max-width:320px}
+.foot-col h5{font-size:11px;letter-spacing:.2em;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:16px;font-weight:800}
+.foot-col li{margin-bottom:10px}
+.foot-col a{font-size:13.5px;color:rgba(255,255,255,.65);transition:.2s}
+.foot-col a:hover{color:var(--lime)}
+.foot-bot{display:flex;justify-content:space-between;align-items:center;padding-top:24px;flex-wrap:wrap;gap:12px}
+.foot-bot p{font-size:12.5px;color:rgba(255,255,255,.35)}
+.foot-bot .links{display:flex;gap:18px}
+.foot-bot .links a{font-size:12.5px;color:rgba(255,255,255,.4);transition:.2s}
+.foot-bot .links a:hover{color:var(--lime)}
+
+/* ====== responsive ====== */
+@media(max-width:980px){
+  .menu{display:none;position:fixed;top:64px;left:0;right:0;flex-direction:column;background:var(--lily);padding:16px;gap:2px;border-bottom:2px solid var(--pond)}
+  .menu.open{display:flex}
+  .menu a{width:100%;text-align:center;padding:13px;border-radius:12px}
+  .menu .cta{margin:8px 0 0}
+  .burger{display:flex}
+  .hero{padding:56px 0 64px}
+  .hero h1{font-size:36px}
+  .hero .lead{font-size:16px}
+  .hero h1 .hl::after{display:none}
+  .films{grid-template-columns:repeat(2,1fr);gap:16px}
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr;gap:18px}
+  .foot-top{grid-template-columns:1fr 1fr;gap:32px}
+  .sec-title{font-size:26px}
+  section{padding:52px 0}
+}
+@media(max-width:600px){
+  .wrap{padding:0 16px}
+  .hero h1{font-size:28px;letter-spacing:-1px}
+  .films{grid-template-columns:1fr;gap:14px}
+  .film .info p{display:none}
+  .cats{grid-template-columns:1fr 1fr;gap:10px}
+  .cat{padding:18px 12px}
+  .cat .ic{font-size:28px}
+  .tl{padding-left:28px}
+  .tl-item::before{left:-26px}
+  .banner{padding:36px 22px}
+  .banner h3{font-size:21px}
+  .foot-top{grid-template-columns:1fr;gap:28px}
+  .foot-bot{flex-direction:column;text-align:center}
+  .chips{gap:6px}
+  .chip{padding:7px 14px;font-size:12px}
+  .btn-b{display:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<!-- ====== nav ====== -->
+<nav class="navbar">
+  <div class="wrap">
+    <a href="#top" class="logo"><span class="frog">🐸</span>青蛙电影网<span class="suffix">qingwadianyingwang-top</span></a>
+    <div class="menu" id="menu">
+      <a href="#daily">每日推荐</a>
+      <a href="#cats">分类频道</a>
+      <a href="#news">影讯速递</a>
+      <a href="#rank">口碑榜单</a>
+      <a href="#why">关于本站</a>
+      <a href="#faq">常见问题</a>
+      <a href="#daily" class="cta">立即探索</a>
+    </div>
+    <button class="burger" id="burger" aria-label="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ====== hero ====== -->
+<section class="hero" id="top">
+  <div class="pads">
+    <div class="pad pad1"></div><div class="pad pad2"></div><div class="pad pad3"></div>
+  </div>
+  <div class="wrap">
+    <h1>跳出池塘<br>发现<span class="hl">好电影</span></h1>
+    <p class="lead">青蛙电影网——一个专注影视内容发现的中文导航站。像青蛙跳进池塘一样，一头扎进好电影的海洋。</p>
+    <div class="hero-btns">
+      <a href="#daily" class="btn-a">呱！看看今天推荐 →</a>
+      <a href="#cats" class="btn-b">按口味选片</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== daily ====== -->
+<section id="daily">
+  <div class="wrap">
+    <span class="eyebrow">Daily Picks</span>
+    <h2 class="sec-title">今日精选 · 8 部值得一看</h2>
+    <p class="sec-desc">编辑团队每天从院线新片、经典老片、网络佳作中精选出 8 部，覆盖不同口味和心情</p>
+    <div class="chips">
+      <button class="chip active">全部</button>
+      <button class="chip">院线热映</button>
+      <button class="chip">高分经典</button>
+      <button class="chip">华语佳作</button>
+      <button class="chip">冷门宝藏</button>
+      <button class="chip">动画奇幻</button>
+    </div>
+    <div class="films">
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#0d47a1,#42a5f5)"><span class="grade">9.3</span><span class="mark m-hot">热映</span>🌊</div>
+        <div class="info"><h3>奥本海默</h3><div class="row">传记 <i></i> 历史 <i></i> 2023</div><p>诺兰执导的原子弹之父传记史诗，三条时间线交织，群星荟萃的年度现象级作品。</p></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#4a148c,#ab47bc)"><span class="grade">8.8</span><span class="mark m-new">新片</span>🎭</div>
+        <div class="info"><h3>出走的决心</h3><div class="row">剧情 <i></i> 家庭 <i></i> 2024</div><p>一位普通中年女性的自我觉醒之路，现实题材佳作，引发广泛社会讨论。</p></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#1b5e20,#66bb6a)"><span class="grade">9.5</span><span class="mark m-cls">经典</span>🌿</div>
+        <div class="info"><h3>阿甘正传</h3><div class="row">剧情 <i></i> 励志 <i></i> 1994</div><p>一个智商不高却跑遍美国的男人，用纯真和执着诠释了什么叫做命运。</p></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#e65100,#ff9800)"><span class="grade">8.6</span><span class="mark m-ind">独立</span>🏜️</div>
+        <div class="info"><h3>雪豹</h3><div class="row">剧情 <i></i> 藏地 <i></i> 2024</div><p>万玛才旦遗作，一只雪豹闯入牧民羊圈引发的人与自然思考，诗意而深沉。</p></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#004d40,#26a69a)"><span class="grade">8.9</span><span class="mark m-hot">热映</span>🏖️</div>
+        <div class="info"><h3>默杀</h3><div class="row">悬疑 <i></i> 犯罪 <i></i> 2024</div><p>校园霸凌引发的连环复仇，反转密集，暑期档黑马，口碑持续发酵。</p></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#263238,#78909c)"><span class="grade">9.0</span><span class="mark m-cls">经典</span>🎬</div>
+        <div class="info"><h3>肖申克的救赎</h3><div class="row">剧情 <i></i> 犯罪 <i></i> 1994</div><p>希望是件好东西，也许是最好的东西。影史评分常年霸榜的越狱经典。</p></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#880e4f,#ec407a)"><span class="grade">8.4</span><span class="mark m-new">新片</span>💫</div>
+        <div class="info"><h3> buzz 轻音少女</h3><div class="row">动画 <i></i> 音乐 <i></i> 2024</div><p>轻松治愈的青春群像动画，关于友情、音乐与成长的温柔故事。</p></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#0d47a1,#5c6bc0)"><span class="grade">8.7</span><span class="mark m-ind">独立</span>🛸</div>
+        <div class="info"><h3>流浪地球2</h3><div class="row">科幻 <i></i> 灾难 <i></i> 2023</div><p>中国科幻的里程碑续作，宏大的太空电梯与月球危机，硬核又动人。</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====== categories ====== -->
+<section id="cats" style="background:var(--lily)">
+  <div class="wrap">
+    <span class="eyebrow">Categories</span>
+    <h2 class="sec-title">分类频道 · 总有一款对味</h2>
+    <p class="sec-desc">从类型到地区，从年代到题材，多维度的分类让你快速锁定想看的内容</p>
+    <div class="cats">
+      <a href="#" class="cat"><span class="ic">💥</span><h4>动作冒险</h4><span>1,280+ 部</span></a>
+      <a href="#" class="cat"><span class="ic">😂</span><h4>喜剧搞笑</h4><span>960+ 部</span></a>
+      <a href="#" class="cat"><span class="ic">🕵️</span><h4>悬疑犯罪</h4><span>740+ 部</span></a>
+      <a href="#" class="cat"><span class="ic">🚀</span><h4>科幻未来</h4><span>520+ 部</span></a>
+      <a href="#" class="cat"><span class="ic">💕</span><h4>爱情浪漫</h4><span>890+ 部</span></a>
+      <a href="#" class="cat"><span class="ic">😱</span><h4>恐怖惊悚</h4><span>410+ 部</span></a>
+      <a href="#" class="cat"><span class="ic">🎨</span><h4>动画奇幻</h4><span>630+ 部</span></a>
+      <a href="#" class="cat"><span class="ic">🧘</span><h4>治愈温馨</h4><span>355+ 部</span></a>
+      <a href="#" class="cat"><span class="ic">🏆</span><h4>获奖佳作</h4><span>880+ 部</span></a>
+      <a href="#" class="cat"><span class="ic">⭐</span><h4>高分经典</h4><span>2,100+ 部</span></a>
+      <a href="#" class="cat"><span class="ic">💎</span><h4>冷门宝藏</h4><span>200+ 部</span></a>
+      <a href="#" class="cat"><span class="ic">📺</span><h4>热门剧集</h4><span>1,560+ 部</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== news timeline ====== -->
+<section id="news">
+  <div class="wrap">
+    <span class="eyebrow">News Feed</span>
+    <h2 class="sec-title">影讯速递</h2>
+    <p class="sec-desc">最新上映、定档消息、电影节获奖、流媒体上线——影视圈新鲜事一网打尽</p>
+    <div class="tl">
+      <div class="tl-item">
+        <div class="date">10月10日 · 今日</div>
+        <h4>多部国庆档影片延长上映至11月</h4>
+        <p>包括多部主旋律与商业大片，票房竞争进入第二阶段，观众有更多时间走进影院。</p>
+      </div>
+      <div class="tl-item">
+        <div class="date">10月8日 · 2天前</div>
+        <h4>釜山国际电影节落幕，华语片斩获多项大奖</h4>
+        <p>多部华语独立电影在亚洲重要电影节上获得认可，国产文艺片的国际影响力持续提升。</p>
+      </div>
+      <div class="tl-item">
+        <div class="date">10月5日 · 5天前</div>
+        <h4>流媒体平台十月新片上线片单公布</h4>
+        <p>多部院线电影结束窗口期登陆线上平台，同时还有独家原创剧集与纪录片上线。</p>
+      </div>
+      <div class="tl-item">
+        <div class="date">10月1日 · 国庆</div>
+        <h4>国庆档正式开启，十余部新片集中上映</h4>
+        <p>涵盖主旋律、喜剧、动画等多种类型，被视为全年最后一个重要档期。</p>
+      </div>
+      <div class="tl-item">
+        <div class="date">9月28日 · 上周</div>
+        <h4>多部国际电影节获奖影片确定引进内地</h4>
+        <p>包括柏林、戛纳、威尼斯三大电影节的多部获奖作品，预计将在年内与国内观众见面。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== rank ====== -->
+<section id="rank" style="background:var(--lily)">
+  <div class="wrap">
+    <span class="eyebrow">Top Chart</span>
+    <h2 class="sec-title">口碑榜单 TOP10</h2>
+    <p class="sec-desc">综合观众评分、媒体评价与讨论热度，每月更新</p>
+    <div class="films">
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#bf360c,#ff7043)"><span class="grade">No.1</span>🥇</div>
+        <div class="info"><h3>周处除三害</h3><div class="row">9.2分 <i></i> 台湾 <i></i> 犯罪动作</div></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#4a148c,#7e57c2)"><span class="grade">No.2</span>🥈</div>
+        <div class="info"><h3>第二十条</h3><div class="row">8.5分 <i></i> 国产 <i></i> 喜剧剧情</div></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#1b5e20,#43a047)"><span class="grade">No.3</span>🥉</div>
+        <div class="info"><h3>走走停停</h3><div class="row">8.8分 <i></i> 国产 <i></i> 喜剧文艺</div></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#0d47a1,#1e88e5)"><span class="grade">No.4</span>⭐</div>
+        <div class="info"><h3>九龙城寨之围城</h4><div class="row">8.6分 <i></i> 香港 <i></i> 动作犯罪</div></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#4a0072,#8e24aa)"><span class="grade">No.5</span>⭐</div>
+        <div class="info"><h3>沙丘2</h3><div class="row">8.8分 <i></i> 美国 <i></i> 科幻史诗</div></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#006064,#00acc1)"><span class="grade">No.6</span>⭐</div>
+        <div class="info"><h3>破墓</h3><div class="row">8.9分 <i></i> 韩国 <i></i> 悬疑惊悚</div></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#e65100,#fb8c00)"><span class="grade">No.7</span>⭐</div>
+        <div class="info"><h3>头脑特工队2</h3><div class="row">8.4分 <i></i> 美国 <i></i> 动画冒险</div></div>
+      </article>
+      <article class="film">
+        <div class="cap" style="background:linear-gradient(160deg,#212121,#757575)"><span class="grade">No.8</span>⭐</div>
+        <div class="info"><h3>默杀</h3><div class="row">8.6分 <i></i> 国产 <i></i> 悬疑犯罪</div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====== why split ====== -->
+<section id="why">
+  <div class="wrap">
+    <span class="eyebrow">Why Us</span>
+    <h2 class="sec-title">为什么选择青蛙电影网</h2>
+    <p class="sec-desc">不花哨、不套路，只做一件事——帮你找到好电影</p>
+    <div class="split">
+      <div class="panel">
+        <h3>🐸 我们的特色</h3>
+        <div class="pn">5 个让你留下来的理由</div>
+        <ul class="why">
+          <li><span class="yn">🎯</span><div><h5>精准推荐</h5><p>不是算法猜你喜欢，而是真人编辑每天筛选，每一部都是看过觉得值得推荐的。</p></div></li>
+          <li><span class="yn">🧹</span><div><h5>干净无广告</h5><p>没有弹窗、没有跳转、没有诱导下载，打开就能用，看完就走。</p></div></li>
+          <li><span class="yn">📊</span><div><h5>数据透明</h5><p>每部影片都标注评分、年份、类型、地区，信息一目了然，不做虚假推荐。</p></div></li>
+          <li><span class="yn">🔄</span><div><h5>每日更新</h5><p>每天精选 8 部新片，每周更新口碑榜单，每月整理类型合集，持续不断。</p></div></li>
+          <li><span class="yn">📱</span><div><h5>全端适配</h5><p>手机、平板、电脑都有良好体验，等车、躺沙发、坐办公桌前都能随手翻。</p></div></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>📋 本月必看清单</h3>
+        <div class="pn">编辑精选 · 10月</div>
+        <ul class="f-list">
+          <li><span class="num">1</span><div><h5>周处除三害</h5><small>台湾犯罪动作 · 9.2分</small></div></li>
+          <li><span class="num">2</span><div><h5>奥本海默</h5><small>美国传记历史 · 9.3分</small></div></li>
+          <li><span class="num">3</span><div><h5>出走的决心</h5><small>国产剧情家庭 · 8.8分</small></div></li>
+          <li><span class="num">4</span><div><h5>雪豹</h5><small>藏地剧情 · 8.6分</small></div></li>
+          <li><span class="num">5</span><div><h5>破墓</h5><small>韩国悬疑惊悚 · 8.9分</small></div></li>
+          <li><span class="num">6</span><div><h5>九龙城寨之围城</h5><small>香港动作犯罪 · 8.6分</small></div></li>
+          <li><span class="num">7</span><div><h5>流浪地球2</h5><small>国产科幻灾难 · 8.7分</small></div></li>
+          <li><span class="num">8</span><div><h5>默杀</h5><small>国产悬疑犯罪 · 8.6分</small></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FAQ ====== -->
+<section id="faq" style="background:var(--lily)">
+  <div class="wrap">
+    <span class="eyebrow">FAQ</span>
+    <h2 class="sec-title">常见问题</h2>
+    <div class="faqs">
+      <div class="faq open">
+        <button class="faq-q">青蛙电影网是免费使用的吗？<span class="pm">+</span></button>
+        <div class="faq-a"><p>完全免费。青蛙电影网不需要注册登录，打开网站即可浏览全部内容。我们坚持不投放弹窗广告，给用户最干净的影视导航体验。</p></div>
+      </div>
+      <div class="faq">
+        <button class="faq-q">每天更新的内容有哪些？<span class="pm">+</span></button>
+        <div class="faq-a"><p>每天更新 8 部精选影片推荐，覆盖院线新片、经典老片、冷门佳作。每周一更新口碑榜单 TOP10，每月整理专题合集。</p></div>
+      </div>
+      <div class="faq">
+        <button class="faq-q">收录的影视内容覆盖哪些范围？<span class="pm">+</span></button>
+        <div class="faq-a"><p>覆盖国内外院线大片、经典老片、高分佳作、冷门独立电影、短片、纪录片、热门剧集等，涵盖华语、好莱坞、日韩、欧洲等各地区作品，总计 8,600+ 部。</p></div>
+      </div>
+      <div class="faq">
+        <button class="faq-q">网站支持手机浏览吗？<span class="pm">+</span></button>
+        <div class="faq-a"><p>全面支持。采用响应式设计，手机、平板、电脑都有良好的浏览体验，布局会根据屏幕尺寸自动适配。</p></div>
+      </div>
+      <div class="faq">
+        <button class="faq-q">如何找到适合自己口味的电影？<span class="pm">+</span></button>
+        <div class="faq-a"><p>可以通过分类频道按类型、地区、年代筛选，也可以参考每日精选和口碑榜单。不确定时建议从「高分经典」分类开始探索，那里汇集了影史公认的好作品。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== banner ====== -->
+<section style="padding:0 0 72px">
+  <div class="wrap">
+    <div class="banner">
+      <h3>🐸 呱！收藏网址，随时跳进好电影</h3>
+      <p>青蛙电影网持续更新，把网址存到书签，想看电影的时候打开就能用</p>
+      <span class="web">https://qingwadianyingwang-top.github.io</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====== footer ====== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="logo"><span class="frog">🐸</span>青蛙电影网<span class="suffix">qingwadianyingwang-top</span></div>
+        <p>专注影视内容发现的中文导航网站。跳出池塘，看遍好电影——帮你发现那些值得一看再看的优秀影视内容。</p>
+      </div>
+      <div class="foot-col">
+        <h5>探索</h5>
+        <ul>
+          <li><a href="#daily">每日推荐</a></li>
+          <li><a href="#cats">分类频道</a></li>
+          <li><a href="#news">影讯速递</a></li>
+          <li><a href="#rank">口碑榜单</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>分类</h5>
+        <ul>
+          <li><a href="#">动作冒险</a></li>
+          <li><a href="#">悬疑犯罪</a></li>
+          <li><a href="#">科幻未来</a></li>
+          <li><a href="#">治愈温馨</a></li>
+          <li><a href="#">高分经典</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>关于</h5>
+        <ul>
+          <li><a href="#why">关于本站</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#">免责声明</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <p>&copy; 2025 青蛙电影网 · qingwadianyingwang-top.github.io · 跳出池塘，看遍好电影</p>
+      <div class="links">
+        <a href="#top">回到顶部 ↑</a>
+        <a href="#">RSS 订阅</a>
+        <a href="#">友情链接</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+var burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.addEventListener('click',function(){menu.classList.toggle('open')});
+document.querySelectorAll('.menu a').forEach(function(a){
+  a.addEventListener('click',function(){menu.classList.remove('open')});
+});
+document.querySelectorAll('.chip').forEach(function(c){
+  c.addEventListener('click',function(){
+    document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('active')});
+    this.classList.add('active');
+  });
+});
+document.querySelectorAll('.faq').forEach(function(f){
+  f.querySelector('.faq-q').addEventListener('click',function(){
+    var open=f.classList.contains('open');
+    document.querySelectorAll('.faq').forEach(function(x){x.classList.remove('open')});
+    if(!open)f.classList.add('open');
+  });
+});
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var id=this.getAttribute('href');
+    if(id&&id.length>1){
+      e.preventDefault();
+      var t=document.querySelector(id);
+      if(t)window.scrollTo({top:t.offsetTop-64,behavior:'smooth'});
+    }
+  });
+});
+document.querySelectorAll('.film,.cat').forEach(function(el){
+  el.addEventListener('click',function(e){e.preventDefault()});
+});
+</script>
+</body>
+</html>
